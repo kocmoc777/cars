@@ -1,0 +1,1993 @@
+:root {
+    --dark: #1C1C1C;
+    --accent: #E27C33;
+    --gray-l: #FBFBFB;
+    --gray: #F4F4F4;
+    --gray-d: #A6A6A6;
+    --gray-sd: #7B7B7B;
+    --text: #333;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 0;
+}
+
+.number-item {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.icon {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+.top-lines-p{
+    margin: 0;
+    color: #FF4D00;
+}
+.top-lines-s{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: var(--text);
+    min-width: 340px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер загальний */
+.container {
+    width: 1046px;
+    margin: 0 auto;
+    text-decoration: none;
+
+}
+
+/* Центрування елементів по вертикалі та горизонталі */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Середній рядок (логотип, меню, пошук) */
+.middle-line {
+    background-color: white;
+    padding: 10px 0;
+}
+
+.middle-line .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Логотип */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Головне меню */
+.main-menu {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu li {
+    margin: 0 15px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Пошук */
+.fast-search {
+    display: flex;
+    align-items: center;
+}
+
+.fast-search__input {
+    position: relative;
+}
+
+.fast-search__input input {
+    padding: 8px 30px 8px 10px;
+
+}
+
+.fast-search__icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Дії користувача (кошик, порівняння тощо) */
+.ml-action {
+    display: flex;
+    align-items: center;
+
+}
+
+.ml-action > div {
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+.ml-action__cart_text {
+    padding-left: 4px;
+}
+.ml-action__cart__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--text);
+    position: relative;
+}
+.ml-action__cart__count {
+    position: absolute;
+    left: 23px;
+    top: -4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FF4D00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Встановлює ширину на всю сторінку */
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Встановлює ширину на всю сторінку */
+}
+
+.header-image {
+    width: 100%; /* Розтягує зображення на всю ширину сторінки */
+    height: auto; /* Зберігає пропорції зображення */
+}
+.container-header{
+    display: block;
+    position: absolute;
+    background-color: rgba(28, 28, 28, 0.76);
+    width: 100%;
+    height: 140px;
+    bottom: 0;
+    padding-top: 35px;
+    margin-bottom: 90px;
+    padding-left: 180px;
+
+}
+.header-title{
+    color: #FF4D00;
+}
+.header-desc{
+    color: #FFFFFF;
+}
+
+
+
+
+/* Основні стилі для секції з автомобілями */
+.cars-section {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: start;
+
+    grid-template-columns: repeat(2, 1fr); /* Два автомобіля в ряду */
+    /*gap: 20px; !* Відстань між картками *!*/
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.car-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 93px;
+    background: #D9D9D9;
+}
+
+/* Стилі для кожної картки автомобіля */
+.car-card {
+    display: inline;
+    width: 300px;
+    background-color: #fff;
+    border-right: 5px solid orange;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-title {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.car-details {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    color: #333;
+    text-align: left;
+}
+
+.car-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.icon {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.car-price {
+    font-weight: bold;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Стилі для кнопки */
+.see-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #333;
+    background: none;
+    border: 1px solid orange;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.see-more-btn:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+
+.title-about{
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.subtitle-about{
+    color: #FF4D00;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.text-about{
+    margin-top: 15px;
+}
+.about-map{
+
+}
+iframe{
+    width: 68vw;
+    height: 25vw;
+    filter: invert(100%);
+}
+
+.text-about-down{
+
+}
+.card-about{
+    max-width: 100%;
+}
+.wrap ul {
+    list-style-position: inside;
+    -moz-column-count: 2; /* Firefox */
+    -webkit-column-count: 2; /* Safari and Chrome */
+    column-count: 2;
+    height: 100px;
+
+}
+.about-list ::marker{
+    color: #FF4D00;
+}
+
+.tel-wrap{
+    margin-top: 30px;
+    text-align: center;
+    border: 5px solid #FF4D00;
+    width: 275px;
+
+
+}
+.tel-nam {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-info i {
+    margin-right: 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f39c12;
+    /*max-width: 800px;*/
+    margin: 10px auto;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.form-field label {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 10px;
+    width: 180px;
+}
+
+.input-wrapper input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.form-button {
+    background-color: #FF4D00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 14px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.form-button:hover {
+    background-color: #333;
+}
+
+.form-button:focus {
+    outline: none;
+}
+/*Прибирає плейсхолдер*/
+:focus::placeholder {
+    color: transparent;
+}
+
+
+.breadcrumbs{
+    margin-top: 20px;
+}
+.breadcrumbs__list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumbs__item{
+    padding-left: 40px;
+    font-size: 14px;
+    position: relative;
+}
+
+.breadcrumbs__item::before {
+    content: "/";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.breadcrumbs__item:first-child {
+    padding-left: 0;
+}
+.breadcrumbs__item:first-child::before {
+    display: none;
+}
+.breadcrumbs__item a{
+    color: var(--text);
+}
+.breadcrumbs__item span {
+    color: var(--gray-d);
+}
+
+
+
+.card-wrappered {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.vehicle-card {
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    width: 300px;
+    text-decoration: none;
+    color: var(--text);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+/* Ефект обведення на hover */
+.vehicle-card:hover {
+    border: 1px solid #FF4D00;
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.5);
+
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: 179px ;
+    border-bottom: 1px solid #e0e0e0;
+}
+.vehicle-card-img {
+    width: 100%;
+    height: 179px ;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.card-details {
+
+    padding: 15px;
+    text-align: center;
+}
+
+.card-details h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card-details p {
+    font-size: 14px;
+    color: #777;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.price-detail {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Стиль для характеристик */
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.features-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 0px 15px 0px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #555;
+}
+
+.feature-item i {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.rent-button {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rent-button:hover {
+    background-color: #FF4D00;
+    color: #fff;
+}
+
+/*  мобільних пристроїв */
+@media (max-width: 768px) {
+    .vehicle-card {
+        width: 300px;
+    }
+}
+
+
+/* Планшети (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .vehicle-card {
+        width: calc(33.3% - 5px); /* 2 картки в рядок */
+        width: 300px;
+
+    }
+}
+
+
+.dropdown-check-list {
+    display: inline-block;
+}
+
+.dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+
+}
+/* .anchor{
+  justify-content: right;
+  text-align: right;
+} */
+.anchor:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.cont-filter  {
+    position: relative;
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    background: #f6f6f6;
+    padding: 9px 15px;
+    justify-content: center;
+    text-align: center;
+
+}
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 63px;
+
+}
+
+.custom-dropdown-button {
+    background-color: #f6f6f6;
+    font-size: 16px;
+    cursor: pointer;
+    color: #495057;
+    border: none;
+}
+
+.custom-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: #f6f6f6;
+    z-index: 1;
+}
+
+.custom-dropdown-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 15px;
+    color: #495057;
+    border-bottom: 1px solid #888888;
+    padding-bottom: 2px;
+}
+
+.custom-dropdown-content label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.custom-dropdown-content input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.custom-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.icon {
+    margin-left: auto;
+    font-size: 18px;
+    color: #495057;
+}
+
+.custom-dropdown:hover .custom-dropdown-content {
+    display: block;
+}
+
+.custom-dropdown:hover .custom-dropdown-button {
+    text-decoration: underline;
+    color: #FF4D00;
+
+}
+
+
+
+/*Картка в корзині*/
+.cart-container {
+    display: flex;
+    max-width:1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: row;
+    padding: 0;
+}
+
+
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #555;
+}
+
+.feature-item i {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+
+/* Стилі для лівої частини */
+.car-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: #555;
+}
+.car-details {
+    flex: 1;
+    padding: 20px;
+    text-align:center;
+    background-color: white;
+    border-right:1px solid #e5e5e5; ;
+}
+
+.car-details h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.subheading {
+    font-weight: normal;
+    color: #666;
+    font-size: 16px;
+}
+
+.car-type {
+    font-size: 18px;
+    color: #777;
+    margin: 10px 0;
+}
+
+/*pay*/
+
+.addon-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.addon-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.addon-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.addon-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.addon-item:last-child {
+    border-bottom: none;
+}
+
+.addon-checkbox {
+    display: none;
+}
+
+/* Кастомний чекбокс */
+.addon-box {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.addon-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #495057;
+    flex-grow: 1;
+}
+
+.addon-text {
+    font-size: 16px;
+}
+
+/* Стилі для вибраного чекбоксу */
+.addon-checkbox:checked + .addon-label .addon-box {
+    border-color: #28a745; /* Зелена рамка */
+    background-color: #28a745; /* Зелений фон */
+}
+
+.addon-checkbox:checked + .addon-label .addon-box::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Ціна */
+.addon-price {
+    font-weight: bold;
+    color: #000;
+}
+
+
+/*pay_end*/
+
+
+
+
+
+
+
+
+.age-requirement {
+    font-size: 14px;
+    color: #888;
+}
+.car-image {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px 0;
+}
+/* Стилі для правої частини */
+.booking-options {
+    flex: 1;
+    padding: 20px;
+}
+
+.booking-options h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+
+
+
+/* Загальні стилі */
+.service-options {
+
+    background-color: #fff;
+    padding: 20px;
+    margin: auto;
+}
+
+.service-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.service-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-checkbox {
+    display: none;
+}
+
+/* Кастомний чекбокс */
+.custom-checkbox {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.service-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #495057;
+    flex-grow: 1;
+
+}
+
+.service-text {
+    font-size: 16px;
+}
+
+/* Стилі для вибраного чекбоксу */
+.service-checkbox:checked + .service-label .custom-checkbox {
+    border-color: #28a745; /* Зелена рамка */
+    background-color: #28a745; /* Зелений фон */
+}
+
+.service-checkbox:checked + .service-label .custom-checkbox::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Ціна */
+.service-price {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+
+
+
+.option {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.3s ease;
+    cursor:pointer;
+}
+
+.option p {
+    margin: 5px 0;
+}
+
+.description {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px; /* Це задає відступ між заголовком та описом */
+}
+
+.included {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.tooltip {
+    display: none; /* Приховуємо підказку за замовчуванням */
+    position: absolute;
+    top: 100%; /* Позиціонуємо під елементом */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px); /* Відступ вниз для зручності */
+    background-color: #fff;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    width: max-content;
+    max-width: 250px;
+    text-align: center;
+    z-index: 10;
+    white-space: nowrap; /* Зберігаємо текст в один рядок */
+}
+
+/* Показуємо підказку при наведенні на елемент */
+.included:hover .tooltip {
+    display: block;
+}
+
+/* Трикутник (вказівник) для підказки */
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.price-extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.included i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+
+
+
+/* Стилі для контейнера з ціною та кнопкою */
+.price-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.price-summary {
+    text-align: left;
+}
+
+.price-summary h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.price-summary p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+.price-details {
+    font-size: 14px;
+    color: #ff6600;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+
+
+
+/* Стилі для модального вікна */
+.modal {
+    display: none; /* Сховати модальне вікно за замовчуванням */
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+.modal-content .price {
+    float: right;
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.next-button {
+    padding: 15px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+    margin-left: 20px;
+}
+
+.next-button:hover {
+    background-color: #e65c00;
+}
+.option:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #ccc;
+}
+/* Стилі для закриття іконки в правому верхньому куті */
+.close-booking {
+    display: flex;
+    font-size: 30px;
+    justify-content: right;
+    text-align: right;
+    color: #888;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-booking:hover {
+    color: #333;
+    color: #f4f4f4;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .car-details, .booking-options {
+        padding: 15px;
+    }
+
+    .price-and-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .next-button {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+
+    .option {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .included, .price-extra {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+/**/
+
+
+.insurance-section {
+    font-family: "Raleway", sans-serif;
+    max-width: 1046px;
+    margin: auto;
+}
+
+.insurance-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.insurance-section p {
+    margin: 5px 0 15px;
+    color: #555;
+}
+
+.card-container {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Для адаптивності */
+}
+
+.card-item {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px; /* Мінімальна ширина блоку */
+    max-width: 300px; /* Максимальна ширина блоку */
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card-item label {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+    height: 100%;
+
+}
+
+.card-item h3 {
+    font-family: "Raleway", sans-serif;
+
+    font-size: 18px;
+    margin-top: 0px;
+    color: #333;
+}
+
+.card-item .deductible-info {
+    font-weight: bold;
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+}
+
+.card-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-item .included-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+
+.card-item .price-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+
+.card-item .green-text {
+    color: green;
+    font-weight: bold;
+}
+
+/* Приховуємо радіокнопки */
+.hidden-radio {
+    display: none;
+    margin:0;
+}
+
+/* Виділення вибраного елемента */
+.hidden-radio:checked + label {
+    border: 2px solid #ff6600;
+}
+
+/* Круглий індикатор у правому верхньому куті */
+.card-item label::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.hidden-radio:checked + label::after {
+    border-color: white;
+    background: #ff6600;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Карточки одна під одною */
+        gap: 20px;
+    }
+
+    .card-item {
+        max-width: 100%; /* Карточка займає всю ширину */
+    }
+
+    .card-item h3 {
+        font-size: 16px;
+    }
+
+    .card-item p {
+        font-size: 12px;
+    }
+
+    .card-item .deductible-info {
+        font-size: 14px;
+    }
+
+    .card-item .included-text,
+    .card-item .price-info {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    .insurance-section h2 {
+        font-size: 20px;
+    }
+
+    .insurance-section p {
+        font-size: 14px;
+    }
+
+    .card-item label {
+        padding: 15px;
+    }
+
+    .card-item label::after {
+        top: 5px;
+        right: 5px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+
+
+.form-container {
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    border-color: #FFA500; /* Помаранчевий колір */
+    outline: none; /* Видаляє стандартну рамку браузера */
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5); /* Додає ефект світіння */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Анімація */
+}
+
+.optional {
+    font-weight: normal;
+    color: #6c757d;
+}
+
+.form-info {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 20px;
+}
+
+.submit-button {
+    display: block;
+    width: 100%; /* Адаптація кнопки під ширину контейнера */
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #ff6600; /* Помаранчевий */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e65c00; /* Темніший помаранчевий */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:active {
+    background-color: #cc5200; /* Ще темніший помаранчевий */
+}
+
+/* Медіа-запити для адаптації */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column; /* Стовпчик замість рядка */
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+.optional-text {
+    color: #495057 ;
+}
+
+.main-containerer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 1024px;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.driver-form-container {
+    flex: 2;
+    max-width: 750px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.booking-cardis {
+    flex: 1;
+    width: 100%;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #fff;
+}
+
+/* Стилі для форми */
+.driver-form-row {
+    display: flex;
+    gap: 10px;
+
+}
+
+.driver-form-group {
+    margin-bottom: 15px;
+    padding-right: 17px;
+    flex: 1;
+}
+.driver-form-info{
+    color:#6c757d;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+input:focus, select:focus {
+    border-color: #FFA500;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+
+
+
+/* Стилі для картки */
+.car-infos {
+    display: flex;
+    gap: 12px;
+}
+
+.car-images {
+    width: 160px;
+    height: auto;
+}
+
+.car-detailess h2 {
+    padding-top: 30px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.mileage-limit {
+    background-color: #fff7e6;
+    padding: 8px;
+    border-radius: 5px;
+}
+.small-title{
+    color: #6c757d;
+    text-align: center;
+    justify-content: center;
+}
+
+.reserve-btn {
+    width: 100%;
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.reserv-footer{
+    color:#6c757d;
+    font-size: 12px;
+}
+.reserve-btn:hover {
+    background-color: #e65c00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.reserve-btn:active {
+    background-color: #cc5200;
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    .driver-form-row {
+        flex-direction: column;
+    }
+    .driver-form-container {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+.page-wrappered {
+    max-width: 1440px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Заголовок */
+.header-section {
+    margin-bottom: 20px;
+}
+
+.car-title {
+    font-size: 28px;
+    color: #000;
+    margin: 0;
+    text-align: left;
+}
+
+.company-name {
+    font-size: 18px;
+    color: #ff4d00;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* Основний блок контенту */
+.content-section {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Зображення та ціни */
+.image-and-pricing {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Вирівнювання верхнього краю елементів */
+    justify-content: space-between; /* Простір між елементами */
+    flex-wrap: wrap; /* Адаптивність: якщо бракує місця, елементи переходять на новий ряд */
+}
+
+.car-main-image img {
+    width: 100%;
+    max-width: 550px; /* Максимальна ширина для зображення */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.pricing-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px; /* Ширина картки */
+    flex: 1; /* Автоматичне вирівнювання розмірів */
+    margin: 0; /* Забираємо додаткові відступи */
+    align-self: flex-start; /* Вирівнюємо по верхньому краю */
+}
+
+
+.car-model {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.car-note {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.car-image img {
+    max-width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.price-table th, .price-table td {
+    text-align: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+.price-table th {
+    font-weight: bold;
+    color: #555;
+}
+
+.price-table td:last-child {
+    font-weight: bold;
+    text-align: right;
+    color: #000;
+}
+
+.select-dates-btn {
+    display: inline-block;
+    padding: 10px 120px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.select-dates-btn:hover {
+    background-color: #218838;
+}
+
+/* Стиль для блоку додаткових функцій */
+.additional-features {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.additional-features h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Сітка для функцій */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature-item i {
+    color: grey;
+    font-size: 20px;
+}
+
+.feature-item span {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Адаптивність */
+
+/* Планшети (768px - 1024px) */
+@media (max-width: 1024px) {
+    .car-title {
+        font-size: 24px;
+    }
+
+    .company-name {
+        font-size: 16px;
+    }
+
+    .image-and-pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        margin: 20px;
+    }
+
+    .pricing-details {
+        text-align: center;
+    }
+}
+
+/* Смартфони (максимум 768px) */
+@media (max-width: 768px) {
+    .car-title {
+        font-size: 22px;
+    }
+
+    .company-name {
+        font-size: 14px;
+    }
+
+    .pricing-card .car-model {
+        font-size: 18px;
+    }
+
+    .pricing-card .price-table th, .pricing-card .price-table td {
+        font-size: 14px;
+    }
+
+    .select-dates-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .description-section p,
+    .features-list {
+        font-size: 14px;
+    }
+}
+
